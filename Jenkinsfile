@@ -7,7 +7,7 @@ pipeline {
         stage ('Build app WCG') {
             agent {
                 dockerfile { 
-                    filename 'final/Dockerfile.Golang' 
+                    filename 'Dockerfile.Golang' 
                     args '--network host'
                }
             }
