@@ -53,7 +53,7 @@ pipeline {
         stage('Upload for tests') {
             agent {
                 dockerfile { 
-                    filename 'final/Dockerfile.Alpine' 
+                    filename 'Dockerfile.Alpine' 
                     args '--network host'
                }
             }
